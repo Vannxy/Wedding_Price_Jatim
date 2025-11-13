@@ -30,9 +30,6 @@ const priceList = {
         'Arsita catering': 29000,
         'DJaya catering': 37500,
         'Sonokembang catering': 60866,
-        'Basic': 35000, 
-        'Standard': 45000,
-        'Premium': 65000
     },
 
     addOnMenu: {
