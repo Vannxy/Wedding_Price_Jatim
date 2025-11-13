@@ -18,9 +18,6 @@ const priceList = {
         'Arsita catering': 29000,
         'DJaya catering': 37500,
         'Sonokembang catering': 60866,
-        'Basic': 35000, 
-        'Standard': 45000,
-        'Premium': 65000
     },
 
     addOnMenu: {
@@ -158,8 +155,8 @@ function calculateSavingsPlan() {
         timeString += `${months} bulan`;
     }
 
-    let finalMessage = `Untuk menutupi kekurangan/memanfaatkan sisa dana sebesar **${formatRupiah(amountToSave)}**, Anda perlu menabung: `;
-    finalMessage += `Dengan tabungan **${formatRupiah(monthlySavings)}** per bulan, Anda akan mencapai target dalam waktu **${timeString}**.`;
+    let finalMessage = `Untuk menutupi kekurangan/memanfaatkan sisa dana sebesar ${formatRupiah(amountToSave)}, Anda perlu menabung: `;
+    finalMessage += `Dengan tabungan ${formatRupiah(monthlySavings)} per bulan, Anda akan mencapai target dalam waktu ${timeString}.`;
     
     savingsMessage.innerHTML = finalMessage;
 }
